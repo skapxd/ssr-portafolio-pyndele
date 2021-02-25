@@ -1,0 +1,1298 @@
+    /* Leyenda
+        c -- Contenedor
+        0 -- numero del contenedor en illustrator
+        -0 -- numero de hijos de un componente
+        __ -- identificador de numero de indentaciones 
+     */
+
+     *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .column{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ::-webkit-scrollbar {display: none; } */
+
+/* =================================================
+Container 1
+=================================================*/
+.c1{
+    height: 7.5vw;
+    width: 100vw;
+    margin: 1.875vw 1.25vw;
+    justify-content: space-between;
+
+}
+
+.c1__1{
+    height: 3.25vw;
+    width: 21.9375vw;
+}
+
+.c1__2{
+    padding: 0.1875vw 0.3125vw;
+    color: #A059F8;
+    font-size: 1.25vw;
+    border: 0.1875vw solid #A059F8;
+    text-decoration: none;
+    margin-right: 3.125vw;
+}
+/* =================================================
+Fin de Container 1
+=================================================*/
+    
+
+
+     
+    /* =================================================
+    Container 2
+      =================================================*/
+    .c2{
+        height: 25vw;
+        /* height: 400.*; */
+        width: 100vw;
+        background-color: #3a0563;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .c2 > img{
+        height: 17.3125vw; 
+        /* height: 277.*;  */
+        width: 31.25vw;
+        /* width: 500.*; */
+    }
+    
+    .c2-1{
+        display: flex;
+        flex-direction: column;
+        font-size: 7.81vw;
+        /* font-size: 125.*; */
+        justify-content: center;
+        align-items: flex-end;
+        /* line-height: 120.*; */
+        line-height: 7.81vw;
+     }
+
+    .c2-1__1{
+        color: #9c59f4;
+        font-weight: bold;
+    }
+
+    .c2-1 > img {
+        /* height: 56.*; */
+        height: 3.5vw;
+        /* width: 134.*; */
+        width: 8.375vw;
+    }
+
+    .c2-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* line-height: 60.*; */
+        line-height: 3.75vw;
+    }
+
+    .c2-2__1{
+        font-size: 2.625vw;
+        color: #9c59f4;
+        font-weight: 300;
+    }
+
+    .c2-2__2{
+        /* font-size: 53.*; */
+        font-size: 3.3125vw;
+        color: #ffb000;
+        font-weight: bold;
+    }
+
+    .c2-2__3{
+        
+        font-size: 3.3125vw;
+        /* font-size: 53.*; */
+        color: #fff;
+        font-weight: bold;
+    }
+    /* =================================================
+    Fin de Container 2
+      =================================================*/
+
+
+/* =================================================
+Container 3
+=================================================*/
+
+.c3__1__1{
+    margin-top: 3vw;
+    width: 68vw;
+    height: 38.1875vw;
+    margin-bottom: 3vw;
+
+}
+
+.c3__1__2__1{
+    /* background-color: turquoise; */
+    height: 1.6875vw;
+    width: 1.6875vw;
+    margin: 2vw 0;
+}
+
+
+.c3__2{
+    height: 1.1vw;
+    width: 10vw;
+}
+
+
+/* =================================================
+Fin de Container 3
+=================================================*/
+
+    
+    /* =================================================
+    Container 4
+      =================================================*/
+
+      .c4{ 
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding-top: 4.8125vw;
+    /* width: 100vw; */
+    align-items: center;
+}
+/* ===================================== */
+
+.c4-1{
+    display: flex;
+    flex-direction: row;
+}
+
+        .c4-1 > img{
+            padding-top: 3.125vw;
+            padding-left: 9.75vw;
+            height: 8vw;
+            width: 13.8125vw;
+
+        }
+
+        .c4-1__1{
+            display: flex;
+            flex-direction: column ;
+            color: #D5D5D5;
+        }
+
+        .c4-1__1 > h3{
+            font-size: 5.4375vw;
+            font-weight: bold;
+        }
+
+        .c4-1__1 > h4{
+            font-size: 2.5625vw;
+            font-weight: bold;
+            margin-right: 0.625vw;
+        }
+/* ===================================== */
+
+
+.c4-2{
+    display: flex;
+    flex-direction: row;
+}
+
+        .c4-2__2{
+            width: 26.1875vw;
+        }
+
+        .c4-2 > img {
+            height: 10.3125vw;
+            width: 11.25vw;
+        }
+
+        .c4-2__1{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            font-size: 1.875vw;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        .c4-2__3{
+            width: 3.5625vw;
+        }
+
+        .c4-2__texto2{
+            color: #3A0563;
+            width: 32.125vw;
+        }
+        .c4-2__texto3{
+            color: #9C59F4;
+            width: 32.125vw;
+        }
+
+        .c4-2__4{
+            width: 26.8vw;
+        }
+/* ===================================== */
+
+
+.c4-3{
+    display: flex;
+    flex-direction: row;
+    padding-top: 4vw;
+}
+
+        .c4-3__1{
+            width: 29.5vw;
+        }
+
+        .c4-3__2{
+            height: 25.625vw; 
+            width: 45.625vw;
+        }
+
+        .c4-3__3{
+            width: 24.875vw;
+        }
+/* ===================================== */
+
+
+.c4-4{
+    padding-top: 6.0625vw;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vw;
+
+}
+
+        .c4-4__1{
+            width: 26.5625vw;
+            
+        }
+
+        .c4-4__1{
+            display: flex;
+            flex-direction: column;
+            height: 8.3125vw;
+            width: 27vw;
+        }
+
+        .c4-4__2{
+            display: flex;
+            flex-direction: column;
+            width: 32.4375vw;
+
+        }
+
+        .c4-4__3{
+            color: #3A0563;
+            font-size: 2.3125vw;
+            font-weight: bold;
+            
+        }
+
+        .c4-4__4,
+        .c4-4__5__1{
+            font-size: 1.5625vw;
+            font-weight: bold;
+            color: #9D9D9D;
+        }
+
+        .c4-4__5{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .c4-4__5__2,
+        .c4-4__6{
+            font-size: 1.5625vw;
+            font-weight: 400;
+            color: #9D9D9D;
+        }
+
+        .c4-4__7{
+            width: 4.865vw;
+        }
+
+        .c4-4__8{
+            width: 15.5vw;
+            height: 3.3125vw;
+            background-color: #FFB000;
+            border: 0 none #fff;
+            border-radius: 0.375vw;
+            color: #FFF;
+            font-weight: bold;
+            font-size: 2vw;
+            /* padding: 10.*; */
+            cursor: pointer;
+            transition: background-color .3s ease-out;
+        }
+
+        .c4-4__8:focus,
+        .c4-4__8:active{
+            border: 0 none #fff;
+            outline: none;
+        }
+
+        .c4-4__8:hover {
+            background-color: #be8407
+        }
+    /* =================================================
+        Fin de Container 4
+    =================================================*/
+
+
+/* =================================================
+    Container 5
+=================================================*/
+.c5{
+    /* top: 0; */
+    margin-top: 3vw;
+}
+
+
+.c5__2{
+    top: 0;
+    align-items: flex-end;
+    margin-bottom: 3vw;
+}
+
+        .c5__2__1{
+            align-items: flex-start;
+            margin-right: 2vw;
+        }
+
+                .c5__2__1__1{
+                    font-size: 5.375vw;
+                    color: #d5d5d5;
+                    line-height: 1;
+                }
+                
+                .c5__2__1__2{
+                    font-size: 2.5625vw;
+                    color: #d5d5d5;
+
+                }
+.c5__3{
+    align-items: flex-start;
+
+}
+
+
+        .c5__3__1{
+            margin-bottom: 1vw;
+            height: 12.5vw;
+            width: 12.5vw;
+        }
+
+        .c5__3__2{
+            color: #3A0563;
+            font-size: 2.3125vw;
+            line-height: 1;
+        }
+
+        
+        .c5__3__3{
+            color: #EE306C;
+            font-size: 2.3125vw;
+            /* line-height: 1; */
+        }
+
+.c5__4{
+    position: relative;
+    height: 8.8125vw;
+    width: 13.8125vw;
+    top: -3.125vw;
+    left: -5vw;
+}
+
+.c5__5{
+    width: 53.5vw;
+    height: 30vw;
+    margin-bottom: 3vw;    
+}
+
+.c5__6{
+    top: 0;
+
+}
+
+
+        .c5__6__1{
+            align-items: flex-start;
+            margin-right: 3vw;
+        }
+
+                .c5__6__1__1{
+                    color: #3A0563;
+                    font-size: 2.1875vw;
+                }
+
+                .c5__6__1__2{
+                    color: #9C59F4;
+                    font-size: 2.1875vw;
+                }
+
+                
+                .c5__6__1__3{
+                    color: #9D9D9D;
+                    font-size: 1.5625vw;
+                    font-weight: 400;
+                }
+
+/* =================================================
+    Fin de Container 5
+=================================================*/
+
+
+    
+
+    /* =================================================
+        Container 6
+    =================================================*/
+.c6{
+    width: 100vw;
+    /* height: 72.375vw; */
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5vw;
+}
+
+.c6-1{
+    padding-top: 3.875vw;
+    width: 6.3125vw;
+    height: 4.125vw;
+    padding-left: 40.6875vw;
+    padding-right: 53vw;
+    font-size: 5.4375vw;
+    line-height: 1;
+    color: #D5D5D5;
+    margin-bottom: 1.1875vw;
+}
+
+.c6-2{
+    line-height: 1;
+    padding-left: 40.6875vw;
+    padding-right: 47.75vw;
+    font-size: 5.4375vw;
+    color: #D5D5D5;
+
+}
+
+.c6-3{
+    display: flex;
+    flex-direction: row;
+}
+
+        .c6-3 > img{
+            height: 10.3125vw;
+            width: 10.4375vw;
+            margin-left: 27.5vw;
+            margin-top: -0.9375vw;
+            margin-bottom: 4.25vw;
+        }
+
+        .c6-3__1{
+            display: flex;
+            flex-direction: column; 
+            margin-left: 2.9375vw;
+        }
+
+                .c6-3__1__1{
+                    font-size: 2.3125vw;
+                    margin-top: 3vw;
+                    color: #9C59F4;
+                    line-height: 1;
+                }
+
+                .c6-3__1__2{
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                        .c6-3__1__2__1 {
+                            font-size: 2.25vw;
+                            color: #FFB000;
+                            line-height: 1;
+                        }
+
+                        .c6-3__1__2 > img{
+                            height: 8vw;
+                            margin-left: 0.9375vw;
+                            margin-top: -3.125vw;
+                            width: 13.8125vw;
+                            margin-right: 26.0625vw;
+                        }
+
+        .c6-4 > img{
+            height: 30.0625vw;
+            width: 53.5vw;
+            margin-left: 26.125vw;
+            margin-right: 20.3125vw;
+            margin-bottom: 2.9375vw;
+        }
+
+.c6-5{
+    display: flex;
+    flex-direction: row;
+    margin-left: 26.125vw;
+}
+
+        .c6-5__1{
+            display: flex;
+            flex-direction: column;
+        }
+
+                .c6-5__1__1{
+                    color: #9C59F4;
+                    font-size: 2.1875vw;
+                    line-height: 1.5;
+                }
+
+                .c6-5__1__2{
+                    display: flex;
+                    font-size: 1.5625vw;
+                    flex-direction: row;
+                    
+                }
+
+                        .c6-5__1__2__1{
+                            color: #9D9D9D;
+                            font-weight: bold;
+                        }
+
+                        .c6-5__1__2__2{
+                            color: #9D9D9D;
+                            font-weight: 300;
+                        }
+                
+                .c6-5__1__3{
+                    color: #9D9D9D;
+                    font-weight: 300;
+                    font-size: 1.75vw;
+                    margin-right: 10.0625vw;
+                    
+                }
+                
+        .c6-5__2{
+            margin-right: 20.3125vw;
+        }
+/* =================================================
+    Fin de Container 6
+=================================================*/
+
+/* =================================================
+    Container 7
+=================================================*/
+
+.c7__1{
+    height: 1.0625vw;
+    width: 9.625vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+} 
+
+.c7__2{
+    margin-bottom: 3vw;
+}
+
+
+        .c7__2__1{
+            margin-top: 10vw;
+            margin-right: 3vw;
+        }
+
+                .c7__2__1__1{
+                    font-size: 5.375vw;
+                    color: #D5D5D5;
+                    line-height: 1;
+                    margin-left: -5vw;
+                }
+
+                .c7__2__1__2{
+                    font-size: 2.5625vw;
+                    color: #D5D5D5;
+
+                }
+
+
+                .c7__2__2__1{
+                    height: 11vw;
+                    width: 11vw;
+                    margin-left: -15vw;
+                }
+
+                .c7__2__2__2{
+                    font-size: 2.3125vw;
+                    color: #3A0563;
+                    width: 26vw;
+                    line-height: 1.4;
+                }
+                
+                .c7__2__2__3{
+                    font-size: 2.3125vw;
+                    color: #EE306C;
+                    width: 26vw;
+                    line-height: 1;
+                }
+
+                .c7__2__3{
+                    width: 18.8125vw;
+                    height: 8vw;
+                    margin-top: 11.3vw;
+                    margin-left: -8vw;
+                }
+
+.c7__3{
+    width: 53.5vw;
+    margin-bottom: 3vw;
+}
+
+        .c7__4__1{
+            align-items: flex-start;
+            margin-right: 4vw;
+        }
+
+                .c7__4__1__1{
+                   color: #9C59F4;
+                   font-size: 2.1875vw;
+
+                }
+
+                .c7__4__1__2,
+                .c7__4__1__3{
+                    color: #9D9D9D;
+                    font-weight: bold;
+                    font-size: 1.5625vw;
+                }
+
+                .c7__4__1__3 span,
+                .c7__4__1__4{
+                    color: #9D9D9D;
+                    font-weight: 400;
+                    font-size: 1.5625vw;
+                }
+
+
+/* =================================================
+    Fin de Container 7
+=================================================*/
+
+
+
+
+
+/* =================================================
+    Container 8
+=================================================*/
+.c8{
+    padding-top: 5.625vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.c8__1{
+    font-size: 5.375vw;
+    color: #D5D5D5;
+    margin-left: 40.75vw;
+    margin-right: 52.5625vw;
+    line-height: 1;
+}
+
+.c8__2{
+    font-size: 2.5625vw;
+    color: #D5D5D5;
+    margin-left: 40.75vw;
+    margin-right: 47.6875vw;
+    margin-bottom: 3vw;
+}
+
+.c8__3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 27.75vw;
+    margin-right: 26vw;
+    margin-bottom: 6.25vw;
+}
+
+        .c8__3 > img{
+            width: 10vw;
+            height: 10.6875vw;
+            margin-right: 3vw;
+            font-size: 2.3125vw;
+            margin-top: -2.1875vw;
+        }
+
+        .c8__3__1{
+            color: #3A0563;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+                .c8__3__1__1{
+                    font-size: 2.1125vw;
+                    color: #3A0563;
+                }
+
+                .c8__3__1__2{
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .c8__3__1__2__1{
+                    width: 16vw;
+                    font-size: 2.1125vw;
+                    color: #9C59F4;
+                }
+
+                .c8__3__1__2 > img{
+                    width: 13.8125vw;
+                    height: 8vw;
+                    margin-top: -3.75vw;
+                    margin-left: 5.1875vw;
+                }
+
+        .c8__4 > img{
+            width: 53.4375vw;
+            height: 30vw;
+            margin-left: 26.1875vw;
+            margin-right: 20.3125vw;
+            margin-bottom: 3.1875vw;
+        }
+
+
+.c8__5{
+    display: flex;
+    flex-direction: row;
+    margin-left: 26.1875vw;
+    margin-right: 20.4375vw;
+    margin-bottom: 5vw;
+    /* background-color: burlywood; */
+}
+
+        .c8__5__1{
+            display: flex;
+            flex-direction: column;
+            /* margin-right: 4vw; */
+            /* background-color: brown; */
+        }
+
+                .c8__5__1__1{
+                    color: #3A0563;
+                    font-size: 2.25vw;
+                    /* font-size: 45.*; */
+                    line-height: 1.2;
+                    font-weight: bold;
+                    width: 39.125vw;
+                }
+
+                .c8__5__1__2{
+                    color: #9D9D9D;
+                    font-size: 1.55vw;
+                    font-weight: bold;
+                }
+
+                .c8__5__1__3{
+                    color: #9D9D9D;
+                    font-size: 1.55vw;
+                    font-weight: 400;
+                }
+/* =================================================
+    Fin de Container 8
+=================================================*/
+
+
+/* =================================================
+    Container 9
+=================================================*/
+
+.c9{
+    width: 100vw;
+    /* height: 58.4375vw; */
+    background-color: #3A0563;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:5.625vw;
+    padding-bottom:5.625vw;
+}
+
+.c9__1{
+    background: #fff;
+    width: 32vw;
+    border-radius: 1.575vw;
+    padding-top: 2.5vw;
+    padding-left: 2.1875vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.c9__2{
+    color: #745CA3;
+    font-weight: bold;
+    font-size: 2.1825vw;
+    line-height: 1;
+}
+
+.c9__3{
+    height: 0.1875vw;
+    width: 10.25vw;
+    margin-top: 0.1vw;
+    background-color: #745CA3;
+
+}
+
+.c9__4{
+    width: 12.6875vw;
+    height: 8.125vw;
+    position: relative;
+    top: 6.25vw;
+    right: -19.625vw;
+    transform: rotate(15deg);
+}
+
+.c9__5{
+    position: relative;
+    padding-left: 1.25vw;
+    font-size: 1.375vw;
+    color: #818282;
+    font-weight: 600;
+    top: 2.5vw;
+    transition: 
+        top .3s ease-out, 
+        color .3s ease-out, 
+        font-size .3s ease-out;
+}
+
+.active{
+    top: 1.25vw;
+    font-size: 1vw;
+    color: #b9b9b9;
+    font-weight: 600;
+}
+
+.c9__6
+{
+    font-size: 1vw;
+    color: #303f9f;
+    width: 100%;
+    outline: none;
+    padding: 0.625vw;
+    margin-top: 1.85vw;
+    /* margin-bottom: 30.*; */
+    background: none;
+    border: none;
+    border-bottom: 0.125vw solid #bbdefb;
+    font-family: "Roboto";
+    transition: border-bottom .3s ease-out;
+}
+
+.c9__6:active,
+.c9__6:focus {
+    outline: none;
+    border-bottom: 0.125vw solid #303f9f;
+}
+
+  
+.error{
+    
+    border-bottom: 0.125vw solid #d32f2f;
+    /* color: #d32f2f; */
+}
+
+.c9__7{
+    margin-top: 1.875vw;
+    color: #818282;
+    font-size: 1.25vw;
+    align-items: flex-start;
+}
+
+
+input[type='checkbox']{
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.c9__7__1{
+    width: 17.5vw;
+    color: #818282;
+    padding: 0.325vw 1vw;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    margin-top: 0.325vw;
+}
+
+.c9__7__1:hover{
+    background-color: rgba(55, 5, 99, 0.1);
+}
+
+.c9__7__1:before{
+    content: '';
+    height: 0.75vw;
+    width: 0.75vw;
+    display: inline-block;
+    border: 0.125vw solid rgba(55, 5, 99, 0.5);
+    border-radius: 0.325vw;
+    margin-right: 0.625vw;
+    transition: all 0.3s ease;
+}
+
+input[type='checkbox']:checked + .c9__7__1{
+    background-color: #745CA3;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+input[type='checkbox']:checked + .c9__7__1:before{
+    display: none;
+    margin-right: 0;
+}
+
+.terminos{
+    width: 28.125vw;
+    margin-top: 1.875vw;
+}
+
+.btn-form{
+    margin-top: 3.125vw;
+    width: 9.375vw;
+    margin-left: 14vw;
+    margin-bottom: 3.125vw;
+    border: none;
+    color: #fff;
+    padding: 0.325vw 0;
+    background-color: #E7316C;
+    font-size: 1.125vw;
+    border-radius: 1.875vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-form:hover{
+    background-color: #991b43;
+
+}
+.btn-form:focus,
+.btn-form:active{
+    outline: none;
+}
+
+/* =================================================
+    Fin de Container 9
+=================================================*/
+
+
+
+
+/* =================================================
+    Container 10
+=================================================*/
+.c10{
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEDED;
+    padding-top: 4.75vw;
+    align-items: center;
+}
+
+.c10__1{
+    width: 10.6875vw;
+    height: 4.5vw;
+    margin-bottom: 1.375vw;
+}
+
+.c10__2{
+    color: #37245E;
+    /* font-size: 37.*; */
+    font-size: 2.3125vw;
+
+    font-weight: bold;
+}
+
+.c10__3{
+    font-size: 2.3125vw;
+    color: #745CA3;
+    font-weight: bold;
+    margin-bottom: 3.625vw;
+}
+
+.c10__4{
+    display: flex;
+    font-display: row;
+    margin-bottom: 4vw;
+}
+
+        .c10__4__1{
+            /* size: 2.875vw; */
+            height: 2.875vw;
+            width: 2.875vw;
+            margin: 0 1.125vw;
+        }
+/* =================================================
+    Fin de Container 10
+=================================================*/
+
+
+/* =================================================
+    Container 11
+=================================================*/
+.c11{
+    padding-top: 1.875vw;
+    padding-bottom: 1.25vw;
+    background-color: #262526;
+}
+
+img.c11__1{
+    height: 4.75vw;
+    width: 20.1875vw;
+    margin-left: 42.75vw;
+    margin-bottom: 3vw;
+}
+
+.c11__2{
+    display: flex;
+    flex-direction: row;
+}
+
+.c11__2__1{
+    font-size: 1.125vw;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 1.5vw;
+
+}
+
+
+/* =================================================
+    Fin de Container 11
+=================================================*/
+
+
+/* =================================================
+    Container 12
+=================================================*/
+.c12{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.c12__1{
+    width: 21.875vw;
+    height: 3.25vw;
+    margin-left: 2.6875vw;
+    margin-top: 1.25vw;
+    margin-bottom: 5.6875vw;
+}
+
+
+.c12__2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 11.375vw;
+    margin-right: 9.125vw;
+    margin-bottom: 2vw;
+
+}
+
+        .c12__2__0{
+            position: absolute;
+            z-index: 0;
+            height: 29.125vw;
+            width: 33.125vw;
+
+        }
+
+        .c12__2__1{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5.375vw;
+            margin-right: 6.875vw;
+            z-index: 100;
+        }
+
+                .c12__2__1__1{
+                    font-size: 2.625vw;
+                    color: #3A0563;
+                }
+
+                .c12__2__1__2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 32.625vw;
+                    height: 3.6vw;
+                    background-color: #3A0563;
+                    border-radius: 2.5vw;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 2.625vw;
+                    font-weight: 400;
+                }
+
+                .c12__2__1__3{
+                    color: #9C59F4;
+                    font-size: 3vw;
+                    font-weight: bold;
+                }
+
+                .c12__2__1__4{
+                    font-size: 2.125vw;
+                    font-weight: 400;
+                    color: #9D9D9D;
+                }
+
+        .c12__2__2{
+            width: 42.1875vw;
+            height: 28.8125vw;
+        }
+
+.c12__3{
+    color: #3A0563;
+    font-size: 2.625vw;
+    font-weight: bold;
+    margin-left: 32.875vw;
+    margin-right: 32.875vw;
+    margin-bottom: 2.1875vw;
+}
+
+.c12__4{
+    height: 3.1875vw;
+    width: 13.5vw;
+    background-color: #EE306C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 43.1875vw;
+    margin-right: 43.1875vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.875vw;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color .3s ease-out;
+    margin-bottom: 3.9375vw;
+
+}
+
+.c12__4:focus {
+    outline: none;
+}
+
+.c12__4:hover{
+    background-color: #ac1847;
+
+
+}
+/* =================================================
+    Fin de Container 12
+=================================================*/
+
+
+
+/* =================================================
+    Container 13
+=================================================*/
+.c13{
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE;
+    padding-top: 3.75vw;
+    padding-bottom: 3.625vw;
+}
+
+.c13__1{
+    display: flex;
+    flex-direction: row;
+}
+
+        .c13__1__1{
+            display: flex;
+            flex-direction: column;
+            margin-left: 40.625vw;
+        }
+
+                .c13__1__1__1{
+                    color: #3A0563;
+                    font-weight: bold;
+                    font-size: 1.5625vw;
+                }
+
+                .c13__1__1__2{
+                    color: #EE306C;
+                    font-weight: bold;
+                    font-size: 2.625vw;
+                }
+
+                .c13__1__1__3{
+                    color: #9D9D9D;
+                    font-weight: 300;
+                    font-size: 1.5625vw;
+                }
+
+        .c13__1__2{
+            width: 12.75vw;
+            height: 7.5625vw;
+            margin-left: 10.5vw;
+            /* margin-left: -10.5vw; */
+            margin-top: 5vw;
+        }
+        
+.c13__2{
+    height: 1.0625vw;
+    width: 9.625vw;
+    margin-bottom: 3.5vw;
+    margin-top: 2.25vw;
+    margin-left: 45.1875vw;
+    margin-right: 45.1875vw;
+}
+/* =================================================
+    Container 13
+=================================================*/
+
+
+/* =================================================
+    Container 14
+=================================================*/
+.c14__1{
+    margin-top: 4vw;
+    margin-left: 16.6875vw;
+    margin-right: 15.625vw;
+    margin-bottom: 5vw;
+    height: 38.125vw;
+    width: 67.75vw;
+}
+/* =================================================
+    Fin de Container 14
+=================================================*/

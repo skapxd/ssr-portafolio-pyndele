@@ -1,4 +1,4 @@
 {
     "appService.deploySubpath": "dist\\blog-pyndele\\browser",
-    "appService.defaultWebAppToDeploy": "/subscriptions/d8f5e4fd-38e1-46f9-823e-7c9f746cb0c7/resourceGroups/landing-dev/providers/Microsoft.Web/sites/portafolio-pyndele"
+    "appService.defaultWebAppToDeploy": "/subscriptions/d8f5e4fd-38e1-46f9-823e-7c9f746cb0c7/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/blog-landing"
 }

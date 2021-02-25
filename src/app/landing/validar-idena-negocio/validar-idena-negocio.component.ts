@@ -7,6 +7,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./validar-idena-negocio.component.scss', './style.css']
 })
 export class ValidarIdenaNegocioComponent implements OnInit {
+
   
   forma: FormGroup;
   constructor(

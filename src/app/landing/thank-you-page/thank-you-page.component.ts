@@ -19,6 +19,14 @@ export class ThankYouPageComponent implements OnInit {
         }
         window.scrollTo(0, 0)
     });
-}
+
+    let filePath ='assets/Nuestro-Menú-Helga-Pizzeria2.pdf';
+
+    var link=document.createElement('a');
+    link.href = filePath;
+    link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
+    link.click();
+
+  }
 
 }

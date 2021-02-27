@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-validar-idena-negocio',
@@ -11,7 +12,8 @@ export class ValidarIdenaNegocioComponent implements OnInit {
   
   forma: FormGroup;
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router,
   ) { 
     this.crearFormulario()
   }
@@ -23,8 +25,8 @@ export class ValidarIdenaNegocioComponent implements OnInit {
     
     this.forma = this.formBuilder.group({
       nombre  : ['', [Validators.required, Validators.minLength(5)]],
-      correo  : ['', Validators.required],
-      telefono: ['', [Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"), Validators.required ]],
+      correo  : ['',[ Validators.required, Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"),] ],
+      telefono: ['', [ Validators.required], ],
       Finanzas: [],
       Marketing: [],
       Ventas: [],
@@ -70,6 +72,8 @@ export class ValidarIdenaNegocioComponent implements OnInit {
 
     // posteo de informacion
     this.forma.reset();  
+
+    this.router.navigate(['/thank-you']);
   }
 
 }

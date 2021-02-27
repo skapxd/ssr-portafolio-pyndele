@@ -12,6 +12,12 @@
 
     }
 
+    .video {
+        border-radius: 3vw;
+        /* border-radius: 0.3125vw; */
+        box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+    }
+
     html, body {
         overflow-x: hidden;
     }
@@ -1087,6 +1093,7 @@ img.c11__1{
     color: #fff;
     font-weight: 300;
     margin-bottom: 1.5vw;
+    cursor: pointer;
 
 }
 
@@ -1112,6 +1119,7 @@ img.c11__1{
     margin-left: 2.6875vw;
     margin-top: 1.25vw;
     margin-bottom: 5.6875vw;
+    cursor: pointer;
 }
 
 

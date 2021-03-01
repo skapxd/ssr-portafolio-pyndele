@@ -20,12 +20,12 @@ export class ThankYouPageComponent implements OnInit {
         window.scrollTo(0, 0)
     });
 
-    let filePath ='assets/GUIA PRACTICA.pdf';
+    // let filePath ='assets/GUIA PRACTICA.pdf';
 
-    var link = document.createElement('a');
-    link.href = filePath;
-    link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
-    link.click();
+    // var link = document.createElement('a');
+    // link.href = filePath;
+    // link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
+    // link.click();
 
   }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Form } from './models/form.model';
 
 @Component({
   selector: 'app-validar-idena-negocio',
@@ -11,10 +12,18 @@ export class ValidarIdenaNegocioComponent implements OnInit {
 
   
   forma: FormGroup;
+
+  popUp: boolean = false;
+
+  sendForm: Form;
+
+  
+
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
   ) { 
+
     this.crearFormulario()
   }
 
@@ -49,15 +58,18 @@ export class ValidarIdenaNegocioComponent implements OnInit {
     return this.forma.get('telefono').invalid && this.forma.get('telefono').touched;
   }
 
-  get termsNoValid(){
-    return this.forma.get('acceptTerms').invalid && this.forma.get('acceptTerms').touched;
+  get termsNoValid(): boolean {
+    return this.forma.get('acceptTerms').invalid && this.forma.get('acceptTerms').touched 
+          && this.telefonoNoValido && this.correoNoValido && this.nombreNoValido
   }
 
   guardar(){
 
-    if ( this.forma.invalid) {
+    if ( this.forma.invalid || this.termsNoValid) {
       
       return Object.values( this.forma.controls ).forEach( control => {
+
+        // this.termsNoValid = true;
 
         if ( control instanceof FormGroup ) {
           Object.values( control.controls ).forEach( control => control.markAsTouched() );
@@ -74,6 +86,15 @@ export class ValidarIdenaNegocioComponent implements OnInit {
     this.forma.reset();  
 
     this.router.navigate(['/thank-you']);
+
+  }
+    // 
+  showPopUp(): void{
+    this.popUp = true;
+  }
+
+  closePopUp(): void {
+    this.popUp = false;
   }
 
 }

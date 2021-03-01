@@ -11,7 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     ValidarIdenaNegocioComponent,
-    ThankYouPageComponent
+    ThankYouPageComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

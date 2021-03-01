@@ -1,4 +1,125 @@
 
+        
+    <!-- =========================================================================== -->
+    <!-- Popup Formulario -->
+    <!-- ============================================================================ -->
+    <div *ngIf="popUp" class="popup background fade-in" >
+
+        <div class='wrapper row'>
+
+            <form  autocomplete="off" class="column c9__1" [formGroup]='forma' (ngSubmit)='guardar()'>
+                
+                
+                <div class="row popup-head" >
+                    
+                    <div class="column popup-head2" >
+
+                        
+                        <h3 class="c9__2" >Descarga la guía</h3>   
+                        <div class="c9__3"></div>   
+
+                        <h3 class="c9__3__1">Déjanos tus datos y recibe la guía en tu correo </h3>
+                        
+                    </div>
+
+                    <img src="/assets/images/close.svg" class="close" alt="" (click)='closePopUp()'>
+                    
+                </div>
+                
+    
+                
+                <!-- <label for="nombre" class="c9__5  ">Nombre completo</label> -->
+                <input  type="text" 
+                        formControlName='nombre'
+                        placeholder='Nombre completo'
+                        [class.error]='nombreNoValido'
+                        class="c9__6 ">    
+    
+                <!--  -->
+                <!-- <label for="email" class="c9__5 ">Correo eléctronico</label> -->
+                <input  type="email"
+                        formControlName='correo'
+                        [class.error]='correoNoValido'
+                        placeholder="Correo eléctronico"
+                         class="c9__6 ">    
+    
+                
+                <!-- <label for="celular" class="c9__5 ">Celular</label> -->
+                <input  type="tel" 
+                        placeholder="Celular"
+                        formControlName='telefono'
+                        [class.error]='telefonoNoValido'
+                        class="c9__6 ">    
+            
+                
+                <h3 class="c9__7">¿Qué temas te gustaría aprender para
+                    aplicar en tu emprendimiento?</h3>
+    
+                <div class="column c9__7">
+
+                    <div class="row">
+                        
+                        <input type="checkbox" name="Finanzas" id="Finanzas" value="Finanzas" >
+                        <label class="c9__7__1" for="Finanzas">Finanzas</label>
+        
+                        
+                        <input type="checkbox" name="Marketing" id="Marketing" value="Marketing" >
+                        <label class="c9__7__1" for="Marketing">Marketing</label>
+        
+                        <input type="checkbox" name="Ventas" id="Ventas" value="Ventas" >
+                        <label class="c9__7__1" for="Ventas">Ventas</label>
+                        
+                    </div>
+
+                    <div class="row">
+
+
+                        
+                        <input type="checkbox" name="Impuestos" id="Impuestos" value="Impuestos" >
+                        <label class="c9__7__1" for="Impuestos">Impuestos</label>
+        
+                        
+                        <input  type="checkbox" 
+                                name="Talento humano" 
+                                id="Talento humano"
+                                formControlName='Talento humano'
+                                value="Talento humano" >
+                        <label class="c9__7__1" for="Talento humano">Talento humano</label>
+        
+                        
+                        <input  type="checkbox" 
+                                name="Desarrollo personal" 
+                                id="Desarrollo personal" 
+                                formControlName='Desarrollo personal'
+                                value="Desarrollo personal" >
+                        <label class="c9__7__1" for="Desarrollo personal">Desarrollo personal</label>
+        
+                    </div>
+                    
+    
+                    <input  type="checkbox" 
+                    name="Acepto los términos y condiciones" 
+                    id="Acepto los términos y condiciones" 
+                    value="Acepto los términos y condiciones" 
+                    formControlName='acceptTerms'>
+                    <label class="c9__7__1 terminos" for="Acepto los términos y condiciones">Acepto los términos y condiciones</label>
+                    
+
+
+                    <span style="margin-top: 10px; color: #E7316C;" *ngIf="termsNoValid">Por favor acepte los terminos ó complete los campos</span>
+    
+                    <button  type="submit" class="btn-form">Enviar guía</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!-- =========================================================================== -->
+    <!-- Fin de Popup Formulario -->
+    <!-- ============================================================================ -->
+    
+
+
     
     <!-- =========================================================================== -->
     <!-- Container 1 -->
@@ -9,7 +130,7 @@
         <img src="assets/images/logo.svg" alt="" class="c1__1" routerLink=''>
         
 
-        <a routerLink='thank-you'
+        <a (click)='showPopUp()'
             class="c1__2">Descarga la guía práctica</a>
     </div>
 
@@ -100,16 +221,7 @@
 
         <div class="c4-1">
 
-            <!-- <div style="flex: 1;"></div> -->
             <div style="width: 40.0625vw;"></div>
-
-            <!-- <div class="c4-1__1">
-                <h3>01</h3>
-                <h4>Capítulo</h4>
-            </div> -->
-
-
-            <!-- <img src="assets/images/gris.svg" alt=""> -->
 
             <div style="width: 24.1875vw;"></div>
 
@@ -119,16 +231,15 @@
         <div class="c4-2">
 
             
-            <!-- <div class="c4-2__2" ></div> -->
             
-            <img src="assets/images/svg-c-1.svg" alt="">
+            <img src="assets/images/svg-c-1.svg" alt="" class="c4-2__0">
             
             <div class="c4-1__1">
                 <h3>01</h3>
                 <h4>Capítulo</h4>
             </div>
 
-            <!-- <div class="c4-2__3" ></div> -->
+            <div class="c4-2__3" ></div>
 
 
             <div class="c4-2__1">
@@ -140,7 +251,6 @@
             
             <img src="assets/images/gris.svg" alt="" class='c4-2__5'>
             
-            <!-- <div class="c4-2__4" ></div> -->
 
 
         </div>
@@ -148,20 +258,17 @@
 
         <div class="c4-3">
 
-            <div class="c4-3__1" ></div>
 
             <!-- <img src="assets/images/img-c-1.png" class="c4-3__2" alt="Capitulo 1"> -->
             <iframe src="https://player.vimeo.com/video/516413536" class="c4-3__2 video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 
-            <!-- <div class="c4-3__3" ></div> -->
 
 
         </div>
 
         <div class="c4-4" >
 
-            <div class="c4-4__1"></div>
 
             <div class="c4-4__2">
                 <h2 class="c4-4__3">Descarga la guía práctica</h2>
@@ -175,9 +282,8 @@
 
             <div class="c4-4__7"></div>
 
-            <button routerLink='thank-you' class="c4-4__8">Descargar</button>
+            <button (click)='showPopUp()' class="c4-4__8">Descargar</button>
 
-            <div style="width: 20vw;"></div>
         </div>
     </div>
     <!-- =========================================================================== -->
@@ -192,15 +298,12 @@
 
         <div class="row c5__2">
 
-            <!-- <div class="c4-2__2" ></div> -->
-
 
             <img src="assets/images/svg-c-2.svg" alt="" class="c5__3__1">
 
             <div class="column c5__2__1">
 
 
-                <!-- <div style='height: 1vw;'></div> -->
                 <h3 class="c5__2__1__1">02</h3>
 
                 <h3 class="c5__2__1__2">Capítulo</h3>
@@ -242,7 +345,7 @@
             </div>
 
             
-            <button routerLink='thank-you' class="c4-4__8 ">Descargar</button>
+            <button (click)='showPopUp()' class="c4-4__8 ">Descargar</button>
         </div>
 
     </div>
@@ -256,12 +359,21 @@
     <!-- ============================================================================ -->
     
     <div class="c6">
-        <h3 class="c6-1">03</h3>
-        <h3 class="c6-2">Capítulo</h3>
+
+        
         
         <div class="c6-3"> 
-
+            
             <img src="assets/images/svg-c-3.svg" alt="Capitulo 3">
+            
+            <div class="column c6-6">
+    
+                <h3 class="c6-1">03</h3>
+                <h3 class="c6-2">Capítulo</h3>
+            </div>
+
+            <div class="c4-2__3 abc2" ></div>
+
 
             <div class="c6-3__1">
 
@@ -299,7 +411,7 @@
                 <h3 class="c6-5__1__3">descargas es momento de hacerlo.</h3>
             </div>
 
-            <button routerLink='thank-you' class="c4-4__8 c6-5__2">Descargar</button>
+            <button (click)='showPopUp()' class="c4-4__8 c6-5__2">Descargar</button>
         </div>
     </div>
     <!-- =========================================================================== -->
@@ -316,6 +428,7 @@
 
         <div class="row c7__2">
 
+            <img src="assets/images/svg-c-4.svg" alt="" class="c7__2__2__1">
 
             <div class="column c7__2__1">
 
@@ -328,9 +441,11 @@
                 </h3>
             </div>
 
+            <div class="c4-2__3 " ></div>
+
+
             <div class="column c7__2__2">
 
-                <img src="assets/images/svg-c-4.svg" alt="" class="c7__2__2__1">
 
                 <h3 class="c7__2__2__2">Permite a tus clientes</h3>
 
@@ -360,7 +475,7 @@
             </div>
 
             
-            <button routerLink='thank-you' class="c4-4__8 ">Descargar</button>
+            <button (click)='showPopUp()' class="c4-4__8 ">Descargar</button>
         </div>
     </div>
     <!-- =========================================================================== -->
@@ -374,12 +489,17 @@
     <!-- ============================================================================ -->
     <div class="c8">
 
-        <h3 class="c8__1">05</h3>
-        <h3 class="c8__2">Capítulo</h3>
-
         <div class="c8__3">
 
             <img src="assets/images/svg-c-5.svg" alt="">
+
+            <div class="column">
+                <h3 class="c8__1">05</h3>
+                <h3 class="c8__2">Capítulo</h3>
+            </div>
+
+            <div class="c4-2__3" ></div>
+
 
             <div class="c8__3__1">
 
@@ -389,19 +509,19 @@
 
                     <h3 class="c8__3__1__2__1">tu producto</h3>
 
-                    <img src="assets/images/gris.svg" alt="">
                 </div>
             </div>
 
+            <img src="assets/images/gris.svg" alt="">
+
         </div>
 
-        <div class="c8__4">
-            <!-- <img src="assets/images/img-c-5-8.png" alt=""> -->
+        <div class="c8__4 row">
             <iframe src="https://player.vimeo.com/video/516862825" class="c8__4__1 video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
         </div>
 
-        <div class="c8__5">
+        <div class="row c8__5">
 
             <div class="c8__5__1">
 
@@ -413,7 +533,7 @@
                 
             </div>
 
-            <button routerLink='thank-you' class="c4-4__8 ">Descargar</button>
+            <button (click)='showPopUp()' class="c4-4__8 ">Descargar</button>
 
 
         </div>
@@ -424,95 +544,6 @@
 
     
     
-    <!-- =========================================================================== -->
-    <!-- Container 9 -->
-    <!-- ============================================================================ -->
-    <div class="c9">
-
-        
-        <img src="assets/images/amarillo.svg" alt="" class="c9__4">
-        <form  autocomplete="off" class="c9__1" [formGroup]='forma' (ngSubmit)='guardar()'>
-            
-            <h3 class="c9__2">Contáctanos</h3>   
-            <div class="c9__3"></div>   
-
-            
-            <label for="nombre" class="c9__5 ">Nombre completo</label>
-            <input  type="text" 
-                    formControlName='nombre'
-                    [class.error]='nombreNoValido'
-                    class="c9__6 ">    
-
-            
-            <label for="email" class="c9__5 ">Correo eléctronico</label>
-            <input  type="email"
-                    formControlName='correo'
-                    [class.error]='correoNoValido'
-                     class="c9__6 ">    
-
-            
-            <label for="celular" class="c9__5 ">Celular</label>
-            <input  type="tel" 
-                    formControlName='telefono'
-                    [class.error]='telefonoNoValido'
-                    class="c9__6 ">    
-        
-            
-            <h3 class="c9__7">¿Qué temas te gustaría aprender para
-                aplicar en tu emprendimiento?</h3>
-
-            <div class="column c9__7">
-    
-                <input type="checkbox" name="Finanzas" id="Finanzas" value="Finanzas" >
-                <label class="c9__7__1" for="Finanzas">Finanzas</label>
-
-                
-                <input type="checkbox" name="Marketing" id="Marketing" value="Marketing" >
-                <label class="c9__7__1" for="Marketing">Marketing</label>
-
-                
-                <input type="checkbox" name="Ventas" id="Ventas" value="Ventas" >
-                <label class="c9__7__1" for="Ventas">Ventas</label>
-
-                
-                <input type="checkbox" name="Impuestos" id="Impuestos" value="Impuestos" >
-                <label class="c9__7__1" for="Impuestos">Impuestos</label>
-
-                
-                <input  type="checkbox" 
-                        name="Talento humano" 
-                        id="Talento humano"
-                        formControlName='Talento humano'
-                        value="Talento humano" >
-                <label class="c9__7__1" for="Talento humano">Talento humano</label>
-
-                
-                <input  type="checkbox" 
-                        name="Desarrollo personal" 
-                        id="Desarrollo personal" 
-                        formControlName='Desarrollo personal'
-                        value="Desarrollo personal" >
-                <label class="c9__7__1" for="Desarrollo personal">Desarrollo personal</label>
-
-                
-                <input  type="checkbox" 
-                        name="Acepto los términos y condiciones" 
-                        id="Acepto los términos y condiciones" 
-                        value="Acepto los términos y condiciones" 
-                        formControlName='acceptTerms'>
-                <label class="c9__7__1 terminos" for="Acepto los términos y condiciones">Acepto los términos y condiciones</label>
-
-                <span style="margin-top: 10px; color: #E7316C;" *ngIf="termsNoValid">Por favor acepte los terminos</span>
-
-                <button  type="submit" class="btn-form">Enviar</button>
-            </div>
-        </form>
-
-
-    </div>
-    <!-- =========================================================================== -->
-    <!-- Fin de Container 9 -->
-    <!-- ============================================================================ -->
 
 
     <!-- =========================================================================== -->

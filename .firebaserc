@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pyndele-19965": {
+      "hosting": {
+        "blog-pyndele": [
+          "pyndele-19965"
+        ]
+      }
+    }
+  }
+}

@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Form } from './models/form.model';
+import { HttpClient } from "@angular/common/http";
+import { map } from "rxjs/operators";
+import { FormService } from '../../services/form.service';
 
 @Component({
   selector: 'app-validar-idena-negocio',
@@ -22,9 +25,12 @@ export class ValidarIdenaNegocioComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
+    private http: FormService 
   ) { 
 
     this.crearFormulario()
+
+    // console.log(this.forma)
   }
 
   ngOnInit(): void {
@@ -36,13 +42,13 @@ export class ValidarIdenaNegocioComponent implements OnInit {
       nombre  : ['', [Validators.required, Validators.minLength(5)]],
       correo  : ['',[ Validators.required, Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"),] ],
       telefono: ['', [ Validators.required], ],
-      Finanzas: [],
-      Marketing: [],
-      Ventas: [],
-      Impuestos: [],
-      'Talento humano': [],
-      'Desarrollo personal': [], 
-      acceptTerms: [, Validators.required],
+      Finanzas: [false],
+      Marketing: [false],
+      Ventas: [false],
+      Impuestos: [false],
+      'Talento humano': [false],
+      'Desarrollo personal': [false], 
+      acceptTerms: [false, Validators.required],
     });
   }
 
@@ -81,8 +87,15 @@ export class ValidarIdenaNegocioComponent implements OnInit {
 
       })
     }
-
+    
+    let hola : string;
     // posteo de informacion
+    console.log(this.forma.value)
+    this.http.crearRegistro(this.forma.value);
+
+
+
+
     this.forma.reset();  
 
     this.router.navigate(['/thank-you']);
